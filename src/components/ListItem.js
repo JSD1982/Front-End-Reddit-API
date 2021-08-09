@@ -2,16 +2,16 @@ import '../styles/components/article-items.css'
 import checkImage from '../assets/image/check-mark.svg'
 import checkVewImage from '../assets/image/check-mark-vew.svg'
 import deleteImage from '../assets/image/trash-can.svg'
-const ListItem = () =>
+const ListItem = ( props ) =>
 {
     return (
         <div className="ListItem-container">
             <div className="ListItem-container__header">
-                <h2>Monthly Getting Started / Web Dev Career Thread</h2>
+                <h2>{ props.title }</h2>
                 <span>date</span>
             </div>
             <div className="ListItem-container__main">
-                <img src="https://external-preview.redd.it/EET3MPMPM0u3aQv8k_KzNjKPjgko6Vo3f4uaFGvbIpY.jpg?width=216&crop=smart&auto=webp&s=82f12dfc10e3a594c90a6e6db57a672addda88e9" alt="" />
+                <img src={ props.image } alt="" />
                 <p>text</p>
             </div>
             <div className="ListItem-container__footer">
