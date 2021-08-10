@@ -4,7 +4,7 @@ import menuIcon from '../assets/image/menu.svg';
 import closeIcon from '../assets/image/x-mark-thin.svg';
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
-import { actionSideDrawer } from "../state/index";
+import { actionSideDrawer, actionData } from "../state/index";
 const SideDrawer = ( props ) =>
 {
 
@@ -12,6 +12,7 @@ const SideDrawer = ( props ) =>
     const dispatch = useDispatch();
 
     const { handleSideDrawer } = bindActionCreators( actionSideDrawer, dispatch );
+
 
 
 
@@ -26,7 +27,12 @@ const SideDrawer = ( props ) =>
 
                 </div>
                 { props.children }
+
             </div>
+
+
+
+
         </>
     );
 }

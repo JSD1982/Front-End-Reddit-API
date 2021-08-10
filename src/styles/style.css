@@ -14,6 +14,7 @@ main{
   transition: all 0.4s ease-in-out;
   left: 0;
   position: relative;
+  width: 50%;
 }
 main.active-drawer{
   left:470px;
@@ -21,6 +22,9 @@ main.active-drawer{
 @media (max-width: 1024px) {
   main.active-drawer{
     left:0;
+  }
+  main{
+    width: 100%;
   }
 }
 main h1{
@@ -31,5 +35,23 @@ main img{
   margin-bottom: 25px;
   max-width: 500px;
   width: 100%;
+}
+.clear-all-container{
+    position: fixed;
+    left: -414px;
+    cursor:pointer;
+    width: 414px;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    z-index: 100;
+    color: #fff;
+    background-color: rgb(27 27 27);
+    transition: all 0.4s ease-in-out;
+}
+.clear-all-container.active{
+    left: 0;
 }
 /*global style*/

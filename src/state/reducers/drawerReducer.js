@@ -1,4 +1,5 @@
-const reducer = (state = false, action) => {
+const reducer = ( state = true, action ) =>
+{
   switch (action.type) {
     case "sideDrawer":
       return (state = action.payload);

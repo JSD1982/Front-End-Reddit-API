@@ -2,7 +2,8 @@
     position: fixed;
     width: 430px;
     height: 100vh;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: #f9f9f9;
     box-shadow: none;
     top: 0;
