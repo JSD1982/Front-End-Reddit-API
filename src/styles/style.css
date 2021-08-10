@@ -54,4 +54,11 @@ main img{
 .clear-all-container.active{
     left: 0;
 }
+@media (max-width: 768px) {
+  .clear-all-container{
+    width: 100%;
+    left: 0;
+  }
+ 
+}
 /*global style*/
